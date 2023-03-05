@@ -1,67 +1,17 @@
-/*BUTTONS*/
-.main-btn {
-	background-color: nth(color, 4);
-	color: nth($list: color, $n:7);
-	padding: map-get($spacing, padding1);
-	font-family: nth($list: fontfamily, $n:4);
-	font-size: 1rem;
-	text-decoration: ($decolinks,none);
-	font-weight: bold;
-	text-align: center;
-	border: none;
-	border-radius: 4px;
-}
-.secondary-btn {
-	background-color: nth($list: color, $n:7);
-	color: nth($list: color, $n:3);
-	padding: 1rem 1.5rem;
-	margin-top: 0.5rem;
-	text-decoration: ($decolinks,none);
-	border-radius: 1.5 rem;
-	border: nth($list: color, $n:3);
-	border-style: solid;
-	text-align: center;
-	font-family: nth($list: fontfamily, $n:4);
-	font-weight: bold;
-	font-size: 16px;
-	letter-spacing: 0em;
-	line-height: 30px;
-	width: 112px;
-	height: 48px;
-}
-.start-btn {
-	background-color: nth($list: color, $n:3);
-	color: nth($list: color, $n:7);
-	padding: 1 rem 1.5rem;
-	margin-top: 0.5rem;
-	text-decoration: ($decolinks,none);
-	border-radius: 1.5 rem;
-	text-align: center;
-	border: none;
-	font-family: nth($list: fontfamily, $n:4);
-	font-weight: bold;
-	font-size: 16px;
-	letter-spacing: 0em;
-	line-height: 30px;
-	width: 112px;
-	height: 48px;
-}
-.buttonssidebyside {
-	display: flex;
-	justify-content: center;
-	min-height: 0px;
-}
-
-.card-btn{
-    all: unset;
-    display: block;
-    margin-left: auto;
-    border: 2px solid color nth($list: color, $n:7);
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 10px;
-    font-weight: 600;
-    transition: all 0.5s;
-    cursor: pointer;
-    letter-spacing: 1.2px;
+.card-btn {
+	all: unset;
+	display: block;
+	margin-left: auto;
+	border: 0.2rem solid nth($color , 7);
+	padding: nth($sizes , 3) nth($sizes , 5);
+	border-radius: 25px;
+	font-size: nth($sizes , 3);
+	font-weight: 600;
+	transition: all 0.5s;
+	cursor: pointer;
+	letter-spacing: 1.2px;
+	&:hover {
+		color: nth($color , 10);
+		background: nth($color , 7)
+	}
 }

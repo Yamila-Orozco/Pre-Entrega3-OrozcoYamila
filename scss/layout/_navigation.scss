@@ -1,58 +1,56 @@
-/* NAVIGATION */
 nav {
-    width: 100%;
-  }
-  .logonavid {
-    max-width: 60px;
-    max-height: 60px;
-    background: transparent;
-    align-self: flex-end;
-  }
-  .menu {
-    font-family: nth($fontfamily, 1);
-    font-weight: lighter;
-    font-size: larger;
-    text-align: center;
-    color: nth($color, 2);
-    z-index: 100;
-    background-color: nth($color, 2);
-    top: 0;
-    position: fixed;
-    justify-content: end;
-    padding: 20px;
-  }
-  li {
-    a {
-      font-family: nth($fontfamily, 1);
-      font-weight: bold;
-      font-size: larger;
-      text-align: center;
-      color: nth($colors, 1);
-      padding: 20px;
-      margin: 20px;
-    }
-    display: inline-block;
-    width: 25%;
-    position: relative;
-    font-size: 14px;
-  }
-  ul {
-    list-style: none;
-    font-size: 0;
-    margin: 0px;
-    padding: 0px;
-    ul {
-      position: absolute;
-      display: none;
-      li {
-        display: block;
-      }
-    }
-    li {
-      &:hover {
-        ul {
-          display: block;
-        }
-      }
-    }
-  }
+	width: 100%;
+}
+.logonavid {
+	max-width: nth($sizes , 9);
+	max-height: nth($sizes , 9);
+	background: transparent;
+	align-self: flex-end;
+}
+.menu {
+	font-family: nth($font-family , 4);
+	font-weight: lighter;
+	font-size: larger;
+	color: nth($color , 6);
+	z-index: 100;
+	background-color: nth($color , 7);
+	top: 0;
+	position: fixed;
+	padding: nth($sizes , 4);
+	@extend %disposition-nav;
+}
+li {
+	a {
+		font-family: nth($font-family , 4);
+		font-weight: bold;
+		font-size: larger;
+		@extend %disposition-text;
+		color: nth($color , 5);
+		padding: nth($sizes , 4);
+		margin: nth($sizes , 4);
+	}
+	display: inline-block;
+	width: 25%;
+	position: relative;
+	font-size: nth($sizes , 2);
+}
+ul {
+	list-style: map-get($decolinks , no-deco);
+	font-size: nth($sizes , 1);
+	margin:nth($sizes , 1);
+	padding: nth($sizes , 1);
+	ul {
+		position: absolute;
+		display: none;
+		li {
+			display: block;
+		}
+	}
+	li {
+		&:hover {
+			ul {
+				display: block;
+			}
+		}
+	}
+}

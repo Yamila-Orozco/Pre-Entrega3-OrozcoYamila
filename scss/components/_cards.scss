@@ -1,0 +1,43 @@
+.card {
+	max-width: 19rem;
+	min-height: 15.5rem;
+	background: nth($color , 7);
+	padding: nth($sizes , 6);
+	border-radius: 0.2rem;
+	box-sizing: border-box;
+	color: nth($color , 7);
+	margin: nth($sizes , 4);
+	box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+	&:nth-child(2) {
+		background: nth($color , 2 );
+		.card-btn {
+			&:hover {
+				color: nth($color , 10);
+				background: nth($color , 7);
+			}
+		}
+	}
+	&:last-child {
+		background: nth($color , 2);
+		.card-btn {
+			&:hover {
+				color: nth($color , 2 );
+				background:nth($color , 7);
+			}
+		}
+	}
+}
+.card-title {
+	margin-top: 0;
+	font-size: nth($sizes , 5);
+	font-weight: 600;
+	letter-spacing: 1.2px;
+}
+.card-content {
+	font-size: 1.4rem;
+	letter-spacing: 0.05rem;
+	line-height: 1.5;
+}
+.cardimage {
+	object-fit: cover;
+}

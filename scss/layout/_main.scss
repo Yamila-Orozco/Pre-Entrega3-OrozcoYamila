@@ -1,0 +1,11 @@
+main {
+	margin-top: 16rem;
+	a {
+		i {
+			color: nth($color , 4);
+			font-size: $sizes, 8;
+			text-align: left;
+			flex-direction: column;
+		}
+	}
+}

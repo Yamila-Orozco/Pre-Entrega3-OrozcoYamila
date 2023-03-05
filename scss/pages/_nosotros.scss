@@ -1,0 +1,16 @@
+/*torn-paper*/
+.bluetornpapertexture {
+	border-radius: map-get($textures, radius);
+	background-image: url(../assets/texturas/bluetornpapertexture.png);
+	background-repeat: map-get($textures , no-repeat)
+}
+.pinktornpapertexture {
+	border-radius: map-get($textures, radius);
+	background-image: url(../assets/texturas/pinktornpapertexture.png);
+	background-repeat: map-get($textures , no-repeat)
+}
+.bluebookspapertexture {
+	border-radius: 0;
+	background-image: url(../assets/texturas/bluebookspapertexture.jpg);
+	padding: 8%;
+}

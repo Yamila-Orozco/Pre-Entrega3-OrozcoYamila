@@ -1,0 +1,35 @@
+h1 {
+	font-family: nth($font-family , 2);
+	font-size: nth($sizes , 14);
+	font-weight: bolder;
+	color: nth($color , 1);
+	@extend %disposition-text;
+}
+h2 {
+	font-family: nth($font-family , 3);
+	font-weight: 400;
+	font-size:  nth($sizes , 7);
+	color: nth($color , 2);
+    @extend %disposition-normaltext;
+	@extend %disposition-text;
+	img {
+		padding: 25px 50px;
+		background: transparent;
+		opacity: 0.87;
+	}
+}
+h3 {
+	font: nth($font-family , 3);
+	font-weight: 400;
+	font-size: nth($sizes , 6);
+	color: nth($color , 6);
+    @extend %disposition-normaltext;
+	@extend %disposition-text;
+}
+p {
+	font-family: nth($font-family , 4);
+	font-size:  nth($sizes , 5);
+	font-weight: lighter;
+	color: nth($color , 5);
+    @extend %disposition-text;
+}
