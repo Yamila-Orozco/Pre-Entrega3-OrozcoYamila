@@ -1,11 +1,11 @@
 @media (min-width: 1200px) {
   .responsive-font {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 @media (max-width: 1199.98px) {
   .responsive-font {
-    font-size: 30px;
+    font-size: 4rem;
   }
   .logo .overlapping {
     width: 20vw;
@@ -52,15 +52,15 @@ h3, h2 {
 }
 
 .start-btn, .secondary-btn, .main-btn {
-  padding: 1rem 1rem;
+  padding: 0.5rem;
   text-decoration: none;
-  border-radius: 1.5rem;
-  margin-top: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
   font-family: "Rift";
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  width: 7rem;
-  height: 3rem;
+  width: 6rem;
+  height: 2.5rem;
 }
 
 .formsbackground, .maincontainer, li a {
@@ -147,7 +147,7 @@ h2 img {
 h3 {
   font: "acier-bat-gris";
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #3B3086;
 }
 
@@ -228,7 +228,7 @@ div p .bluebookspapertexture {
 }
 
 main {
-  margin-top: 16rem;
+  margin-top: 500rem;
 }
 main a i {
   color: #7291F9;
@@ -245,6 +245,10 @@ main a i {
   margin-right: auto;
   width: 32.5rem;
   height: 32.5rem;
+}
+
+.maincontainer {
+  margin-top: 20rem;
 }
 
 .footer {
@@ -302,7 +306,7 @@ footer a i:hover {
 .footer-social-icon span {
   color: #F2F2F2;
   display: block;
-  font-size: 1.25rem;
+  font-size: 0.5rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
 }
@@ -387,6 +391,11 @@ footer a i:hover {
   color: #ff5e14;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 aside a i:hover {
   color: #F25C78;
 }

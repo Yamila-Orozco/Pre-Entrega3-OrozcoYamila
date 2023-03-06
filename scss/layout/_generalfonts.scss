@@ -1,5 +1,4 @@
 h1 {
-	margin-top: nth($sizes , 5 );
 	font-family: nth($font-family , 2);
 	font-size: nth($sizes , 14);
 	font-weight: bolder;
@@ -22,7 +21,7 @@ h2 {
 h3 {
 	font: nth($font-family , 3);
 	font-weight: 400;
-	font-size: nth($sizes , 6);
+	font-size: nth($sizes , 4);
 	color: nth($color , 6);
     @extend %disposition-normaltext;
 	@extend %disposition-text;

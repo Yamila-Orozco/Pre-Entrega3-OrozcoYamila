@@ -12,15 +12,15 @@
 };
 
 %disposition-btn {
-    padding: 1rem 1rem;
+    padding: nth($sizes , 2);
     text-decoration: none;
-    border-radius: nth($sizes , 5);
-    margin-top: nth($sizes , 2);
+    border-radius: nth($sizes , 3);
+    margin: nth($sizes , 2);
     font-family: nth($font-family , 4);
-    font-size: nth($sizes , 3);
+    font-size: nth($sizes , 4);
     font-weight: bold;
-    width: nth($sizes , 14);
-	height: nth($sizes , 8);
+    width: nth($sizes , 13);
+	height: nth($sizes , 7);
 };
 
 %padding-margin-4{
