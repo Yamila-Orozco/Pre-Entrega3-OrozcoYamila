@@ -1,0 +1,46 @@
+a {
+	text-decoration: map-get($decolinks , none);
+}
+
+.scroll {
+	a {
+		color: nth($color , 10);
+		font-size: nth($sizes , 8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+img {
+	align-content: center;
+}
+.maincontainer {
+	@extend %padding-margin-4
+}
+
+section {
+	margin: 5%;
+}
+div {
+	p {
+		.bluebookspapertexture {
+			width: -moz-fit-content;
+			width: fit-content;
+			overflow-wrap: normal;
+		}
+	}
+}
+
+
+.alignmentcenter {
+	text-align: center;
+}
+.alignhalf {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	&:first-child {
+		align-self: center;
+	}
+}

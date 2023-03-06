@@ -1,0 +1,39 @@
+header {
+	nav {
+		ul {
+			li {
+				a {
+					&:hover {
+						color: nth($color , 3);
+						text-decoration: underline;
+					}
+					img {
+						&:hover {
+							transform: rotate(-180deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.socialneticons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+.flexcolumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+}

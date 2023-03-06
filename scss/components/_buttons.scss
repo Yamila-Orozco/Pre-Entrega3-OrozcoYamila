@@ -3,15 +3,49 @@
 	display: block;
 	margin-left: auto;
 	border: 0.2rem solid nth($color , 7);
-	padding: nth($sizes , 3) nth($sizes , 5);
+	padding: nth($sizes , 3);
 	border-radius: 25px;
-	font-size: nth($sizes , 3);
+	font-size: nth($sizes , 2);
 	font-weight: 600;
 	transition: all 0.5s;
 	cursor: pointer;
-	letter-spacing: 1.2px;
+	letter-spacing: 0.1rem;
 	&:hover {
-		color: nth($color , 10);
-		background: nth($color , 7)
+		color: nth($color , 7);
+		background: nth($color , 3);
 	}
+}
+
+.main-btn {
+	background-color: nth($color , 4);
+	color:  nth($color , 3);
+	font-weight: bold;
+	border: none;
+	@extend %disposition-btn;
+	@extend %disposition-text;
+}
+.secondary-btn {
+	background-color: nth($color , 7);
+	color: nth($color , 3);
+	border: nth($color , 3);
+	border-style: solid;
+	letter-spacing: 0rem;
+	line-height: 30px;
+	@extend %disposition-btn;
+	@extend %disposition-text;
+}
+.start-btn {
+	background-color:  nth($color , 4);
+	color: nth($color , 3);
+	border: none;
+	letter-spacing: 0rem;
+	line-height: 30px;
+	@extend %disposition-btn;
+	@extend %disposition-text;
+}
+
+.buttonssidebyside {
+	display: flex;
+	justify-content: center;
+	min-height: 0px;
 }

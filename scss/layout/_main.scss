@@ -3,9 +3,19 @@ main {
 	a {
 		i {
 			color: nth($color , 4);
-			font-size: $sizes, 8;
+			font-size:  nth($sizes , 14);
 			text-align: left;
 			flex-direction: column;
 		}
 	}
+}
+
+.containervideo {
+	display: flex;
+	justify-content: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 32.5rem;
+	height: 32.5rem;
 }

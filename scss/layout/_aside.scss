@@ -1,0 +1,9 @@
+aside {
+	a {
+		i {
+			&:hover {
+				color: nth($color , 3);
+			}
+		}
+	}
+}

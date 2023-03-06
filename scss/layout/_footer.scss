@@ -1,0 +1,143 @@
+.footer {
+	background-color: nth($color , 7);
+	text-align: left;
+	padding: 2%;
+}
+footer {
+	a {
+		i {
+			color: nth($color , 4);
+			font-size: nth($sizes , 8);
+			text-align: left;
+			justify-content: flex-end;
+			padding: 1%;
+			&:hover {
+				color: nth($color , 3);
+			}
+		}
+	}
+}
+.footer-section {
+	background: nth($color , 4);
+	position: relative;
+}
+.footer-cta {
+	border-bottom: 1px solid nth($color , 9);
+}
+.single-cta {
+	i {
+		color: nth($color , 3);
+		font-size: nth($sizes , 6);
+		margin-top: nth($sizes , 2)x;
+	}
+}
+.cta-text {
+	padding-left: nth($sizes , 3);
+	display: inline-block;
+	h4 {
+		color: nth($color , 7);
+		font-size: 2nth($sizes , 4);
+		font-weight: 600;
+		margin-bottom: 0.125rem;
+	}
+	span {
+		color: nth($color , 8);
+		font-size: nth($sizes , 3);
+	}
+}
+.footer-content {
+	position: relative;
+	z-index: 2;
+}
+.footer-social-icon {
+	span {
+		color: nth($color , 7);
+		display: block;
+		font-size: nth($sizes , 4);
+		font-weight: 700;
+		margin-bottom: nth($sizes , 4);
+	}
+	a {
+		color: nth($color , 7);
+		font-size: nth($sizes , 3);
+		margin-right: nth($sizes , 1);
+	}
+	i {
+		height: nth($sizes , 7);
+		width: nth($sizes , 7);
+		text-align: center;
+		line-height: nth($sizes , 7);
+		border-radius: 50%;
+	}
+}
+.footer-widget-heading {
+	h3 {
+		color: nth($color , 7);
+		font-size: 2nth($sizes , 4);
+		font-weight: 600;
+		margin-bottom: nth($sizes , 7);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -15px;
+			height: 0.125rem;
+			width: nth($sizes , 8);
+			background: nth($color , 3);
+		}
+	}
+}
+.footer-widget {
+	ul {
+		li {
+			display: inline-block;
+			width: 50%;
+			margin-bottom: 0.75rem;
+			a {
+				&:hover {
+					color: nth($color , 9);
+				}
+				color :nth($color , 8);
+				text-transform: capitalize;
+			}
+		}
+	}
+}
+.subscribe-form {
+	position: relative;
+	overflow: hidden;
+	input {
+		width: 100%;
+		padding: 14px 28px;
+		background: nth($color , 5);
+		border: 1px solid nth($color , 5);
+		color: nth($color , 7);
+	}
+	button {
+		right: 0;
+		background:nth($color , 3);
+		padding: 13px 20px;
+		border: 1px solid nth($color , 8);
+		top: 0;
+		i {
+			color: nth($color , 7);
+			font-size: 22px;
+			transform: rotate(-6deg);
+		}
+	}
+}
+.copyright-area {
+	background: nth($color , 5);
+	padding: 10px;
+}
+.copyright-text {
+	p {
+		margin: 0;
+		font-size: 14px;
+		color: nth($color , 8);
+		a {
+		color: nth($color , 9);
+		}
+	}
+}

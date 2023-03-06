@@ -31,11 +31,11 @@
 	margin-top: 0;
 	font-size: nth($sizes , 5);
 	font-weight: 600;
-	letter-spacing: 1.2px;
+	letter-spacing: 0.075rem;
 }
 .card-content {
-	font-size: 1.4rem;
-	letter-spacing: 0.05rem;
+	font-size: nth($sizes , 3);
+	letter-spacing: nth($sizes , 2);
 	line-height: 1.5;
 }
 .cardimage {

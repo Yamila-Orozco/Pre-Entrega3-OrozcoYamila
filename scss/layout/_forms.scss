@@ -1,0 +1,132 @@
+.formsbackground {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: nth($sizes ,4);
+	background: nth($color , 7);
+    @extend %padding-margin-4;
+}
+
+.formstyle {
+	border: 5px;
+	border-color: nth($color , 1);
+	border-style: solid;
+	padding: nth($sizes , 2);
+	align-content: center;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	padding: nth($sizes , 4);
+	height: 100%;
+}
+.login {
+	width: 50%;
+	background-color: nth($color , 3);
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	text-align: center;
+	padding-top: 100px;
+	margin-top: nth($sizes , 2);
+	h1 {
+		margin-bottom: nth($sizes , 2);
+		font-size: nth($sizes , 2);
+	}
+	a {
+		text-decoration: none;
+		color: nth($color , 7);
+		transition: 0.3s all ease-in-out;
+		&:hover {
+			color: nth($color , 3);
+			font-weight: bold;
+		}
+	}
+	button {
+		width: 100%;
+		margin: 30px 0;
+		padding: 10px;
+		border: none;
+		background-color: nth($color , 8);
+		color: nth($color , 7);
+		font-size: nth($sizes , 2);
+		cursor: pointer;
+		transition: 0.3s all ease-in-out;
+		&:hover {
+			width: 97%;
+			font-size: 22px;
+			border-radius: 5px;
+		}
+	}
+	hr {
+		width: 30%;
+		display: inline-block;
+	}
+	p {
+		display: inline-block;
+		margin: 20px 10px 30px;
+	}
+	ul {
+		list-style: none;
+		margin-bottom: nth($sizes , 7);
+		li {
+			display: inline-block;
+			margin-right: 30px;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.6;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.register {
+	width: 50%;
+	background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
+	height: 100%;
+	color: nth($color, 7);
+	border-radius: 0 10px 10px 0;
+	text-align: center;
+	padding: 100px 0;
+	h2 {
+		margin: 30px 0;
+		font-size: 50px;
+		letter-spacing: 3px;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	button {
+		background-color: transparent;
+		border: 1px solid nth($color, 7);
+		border-radius: nth($sizes , 2);
+		padding: 10px nth($sizes , 2);
+		color: nth($color , 7);
+		font-size: nth($sizes , 2);
+		text-transform: uppercase;
+		transition: 0.2s all ease-in-out;
+		&:hover {
+			color: nth($color , 3);
+			background-color: nth($color , 7);
+			cursor: pointer;
+		}
+	}
+}
+input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: nth($color , 7);
+}
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: nth($color , 7);
+}
+input[type="checkbox"] {
+	margin-right: 5px;
+}
