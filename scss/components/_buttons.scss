@@ -23,6 +23,10 @@
 	border: none;
 	@extend %disposition-btn;
 	@extend %disposition-text;
+	&:hover {
+		color: nth($color , 7);
+		background: nth($color , 3);
+	}
 }
 .secondary-btn {
 	background-color: nth($color , 7);
@@ -33,6 +37,10 @@
 	line-height: 30px;
 	@extend %disposition-btn;
 	@extend %disposition-text;
+	&:hover {
+		color: nth($color , 7);
+		background: nth($color , 3);
+	}
 }
 .start-btn {
 	background-color:  nth($color , 4);
@@ -42,10 +50,18 @@
 	line-height: 30px;
 	@extend %disposition-btn;
 	@extend %disposition-text;
+	&:hover {
+		color: nth($color , 7);
+		background: nth($color , 3);
+	}
 }
 
 .buttonssidebyside {
 	display: flex;
 	justify-content: center;
 	min-height: 0px;
+	&:hover {
+		color: nth($color , 7);
+		background: nth($color , 3);
+	}
 }

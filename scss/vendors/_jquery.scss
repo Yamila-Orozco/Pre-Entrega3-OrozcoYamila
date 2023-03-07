@@ -1,8 +1,4 @@
-@media (min-width: 1200px) {
-	.responsive-font {
-		font-size: 5rem;
-	}
-}
+
 @media (max-width: 1199.98px) {
 	.responsive-font {
 		font-size: 4rem;
@@ -11,8 +7,8 @@
 		.overlapping {
 			width: 20vw;
 			height: 20vw;
-			padding: auto;
-			margin: auto;
+			padding: 2vw;
+			margin:2rem;
 		}
 	}
 	.formwrapper {
@@ -27,5 +23,17 @@
 @media only screen and (max-width: 480px) {
 	img {
 		width: 100%;
+	}
+}
+
+@media (max-width:1199.98px) {
+	.formwrapper{
+		flex-direction:column;
+	}
+}
+
+@media only screen and (min-width:600px){
+	.lg {
+		display:none
 	}
 }

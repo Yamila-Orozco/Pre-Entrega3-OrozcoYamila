@@ -1,0 +1,11 @@
+// Define mixin for media query with a minimum width
+@mixin min-width-s {
+    @media (min-width: 576px) {
+      font-size: small;
+      
+    }
+  }
+
+  h2{
+    @include min-width-s
+  }

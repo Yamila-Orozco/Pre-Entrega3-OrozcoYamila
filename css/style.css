@@ -1,8 +1,9 @@
-@media (min-width: 1200px) {
-  .responsive-font {
-    font-size: 5rem;
+@media (min-width: 576px) {
+  h2 {
+    font-size: small;
   }
 }
+
 @media (max-width: 1199.98px) {
   .responsive-font {
     font-size: 4rem;
@@ -10,8 +11,8 @@
   .logo .overlapping {
     width: 20vw;
     height: 20vw;
-    padding: auto;
-    margin: auto;
+    padding: 2vw;
+    margin: 2rem;
   }
   .formwrapper {
     flex: column;
@@ -27,6 +28,16 @@
     width: 100%;
   }
 }
+@media (max-width: 1199.98px) {
+  .formwrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .lg {
+    display: none;
+  }
+}
 /*RESETS*/
 * {
   margin: 0;
@@ -37,7 +48,7 @@ html {
   overflow-x: hidden;
 }
 
-/* 4 */
+/*5*/
 .menu {
   text-align: center;
   justify-content: end;
@@ -188,8 +199,6 @@ header nav ul li a img:hover {
 body {
   overflow-x: hidden;
   position: relative;
-  font-size: 1rem;
-  font-family: "Rift";
 }
 
 .scroll a {
@@ -562,6 +571,10 @@ input[type=checkbox] {
   font-weight: bold;
   border: none;
 }
+.main-btn:hover {
+  color: #F2F2F2;
+  background: #F25C78;
+}
 
 .secondary-btn {
   background-color: #F2F2F2;
@@ -571,6 +584,10 @@ input[type=checkbox] {
   letter-spacing: 0rem;
   line-height: 30px;
 }
+.secondary-btn:hover {
+  color: #F2F2F2;
+  background: #F25C78;
+}
 
 .start-btn {
   background-color: #7291F9;
@@ -579,11 +596,19 @@ input[type=checkbox] {
   letter-spacing: 0rem;
   line-height: 30px;
 }
+.start-btn:hover {
+  color: #F2F2F2;
+  background: #F25C78;
+}
 
 .buttonssidebyside {
   display: flex;
   justify-content: center;
   min-height: 0px;
+}
+.buttonssidebyside:hover {
+  color: #F2F2F2;
+  background: #F25C78;
 }
 
 .wrapper {
