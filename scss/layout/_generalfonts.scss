@@ -20,9 +20,10 @@ h2 {
 }
 
 h3 {
-	font-family: nth($font-family , 3);
-	font-size: nth($sizes , 4);
-	color: nth($color , 6);
+	font-family: nth($font-family , 3 );
+	font-size: nth($sizes , 6);
+	color: nth($color , 2);
+	font-weight: 400;
     @extend %disposition-normaltext;
 	@extend %disposition-text;
 }

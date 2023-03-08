@@ -1,9 +1,4 @@
-
 @media (max-width: 1199.98px) {
-	.responsive-font {
-		font-size: 4rem;
-	}
-
 	.formwrapper {
 		flex: column;
 	}
@@ -51,7 +46,7 @@ nav .logo {
 	margin-right: 2rem;
   }
 
-  // Add animation styles for the logo
+  // animation styles for the logo
   &.lg-animation {
     transform:rotateX('angle');
   }
@@ -87,3 +82,64 @@ main .socialneticons{
 	  }
 	
 }
+
+// FONT RESPONSIVE styles for different screen sizes
+@media only screen and (max-width: 480px) {
+	h1 {
+	  font-size: calc(16px + 2vw);
+	}
+	h2 {
+	  font-size: calc(7px + 2vw);
+	}
+	h3 {
+	  font-size: calc(6px + 1.5vw);
+	}
+	p {
+	  font-size: calc(5px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+	h1 {
+	  font-size: calc(18px + 2vw);
+	}
+	h2 {
+	  font-size: calc(9px + 2vw);
+	}
+	h3 {
+	  font-size: calc(8px + 1.5vw);
+	}
+	p {
+	  font-size: calc(6px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+	h1 {
+	  font-size: calc(20px + 2vw);
+	}
+	h2 {
+	  font-size: calc(11px + 2vw);
+	}
+	h3 {
+	  font-size: calc(10px + 1.5vw);
+	}
+	p {
+	  font-size: calc(7px + 1.2vw);
+	}
+  }
+  
+  @media only screen and (min-width: 1024px) {
+	h1 {
+	  font-size: calc(24px + 2vw);
+	}
+	h2 {
+	  font-size: calc(14px + 2vw);
+	}
+	h3 {
+	  font-size: calc(12px + 1.5vw);
+	}
+	p {
+	  font-size: calc(9px + 1.2vw);
+	}
+  }

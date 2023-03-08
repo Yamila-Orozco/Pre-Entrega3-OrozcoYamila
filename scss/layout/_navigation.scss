@@ -1,17 +1,18 @@
 nav {
 	width: 100%;
 }
+/*
 .logonavid {
 	background: transparent;
 	align-self: flex-end;
 }
+*/
 
 .lg-animation {
 	&:hover {
 		transform: rotate(-180deg);
 	}
 }
-
 
 .menu {
 	font-family: nth($font-family , 4);
@@ -27,6 +28,7 @@ nav {
 }
 li {
 	a {
+		text-decoration:  map-get($decolinks , no-deco);
 		font-family: nth($font-family , 4);
 		font-weight: bold;
 		font-size: larger;
@@ -40,6 +42,7 @@ li {
 	font-size: nth($sizes , 3);
 }
 ul {
+	text-decoration:  map-get($decolinks , no-deco);
 	list-style: map-get($decolinks , no-deco);
 	font-size: nth($sizes , 1);
 	margin:nth($sizes , 1);

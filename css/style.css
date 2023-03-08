@@ -1,14 +1,5 @@
 /* variable logo sizes */
-@media (min-width: 576px) {
-  h2 {
-    font-size: small;
-  }
-}
-
 @media (max-width: 1199.98px) {
-  .responsive-font {
-    font-size: 4rem;
-  }
   .formwrapper {
     flex: column;
   }
@@ -89,6 +80,62 @@ nav .logo.lg-animation {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: calc(16px + 2vw);
+  }
+  h2 {
+    font-size: calc(7px + 2vw);
+  }
+  h3 {
+    font-size: calc(6px + 1.5vw);
+  }
+  p {
+    font-size: calc(5px + 1.2vw);
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: calc(18px + 2vw);
+  }
+  h2 {
+    font-size: calc(9px + 2vw);
+  }
+  h3 {
+    font-size: calc(8px + 1.5vw);
+  }
+  p {
+    font-size: calc(6px + 1.2vw);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: calc(20px + 2vw);
+  }
+  h2 {
+    font-size: calc(11px + 2vw);
+  }
+  h3 {
+    font-size: calc(10px + 1.5vw);
+  }
+  p {
+    font-size: calc(7px + 1.2vw);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: calc(24px + 2vw);
+  }
+  h2 {
+    font-size: calc(14px + 2vw);
+  }
+  h3 {
+    font-size: calc(12px + 1.5vw);
+  }
+  p {
+    font-size: calc(9px + 1.2vw);
+  }
+}
 /*RESETS*/
 * {
   margin: 0;
@@ -133,11 +180,12 @@ nav {
   width: 100%;
 }
 
+/*
 .logonavid {
-  background: transparent;
-  align-self: flex-end;
+	background: transparent;
+	align-self: flex-end;
 }
-
+*/
 .lg-animation:hover {
   transform: rotate(-180deg);
 }
@@ -161,6 +209,7 @@ li {
   font-size: 1rem;
 }
 li a {
+  text-decoration: none;
   font-family: "Rift";
   font-weight: bold;
   font-size: larger;
@@ -168,6 +217,7 @@ li a {
 }
 
 ul {
+  text-decoration: none;
   list-style: none;
   font-size: 0rem;
   margin: 0rem;
@@ -205,8 +255,9 @@ h2 img {
 
 h3 {
   font-family: "acier-bat-gris";
-  font-size: 1.25rem;
-  color: #3B3086;
+  font-size: 2rem;
+  color: #E66BBA;
+  font-weight: 400;
 }
 
 p {
@@ -224,25 +275,6 @@ header nav ul li a img:hover {
   transform: rotate(-180deg);
 }
 
-/* 
-.socialneticons {
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: ;
-    align-items: center;
-    padding: 20px;
-  }
-
-.flexcolumn {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: fixed;
-	z-index: 100;
-}
- */
 body {
   overflow-x: hidden;
   position: relative;
