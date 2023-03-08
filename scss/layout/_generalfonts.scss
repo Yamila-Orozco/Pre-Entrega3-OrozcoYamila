@@ -18,14 +18,15 @@ h2 {
 		opacity: 0.87;
 	}
 }
+
 h3 {
-	font: nth($font-family , 3);
-	font-weight: 400;
+	font-family: nth($font-family , 3);
 	font-size: nth($sizes , 4);
 	color: nth($color , 6);
     @extend %disposition-normaltext;
 	@extend %disposition-text;
 }
+
 p {
 	font-family: nth($font-family , 4);
 	font-size:  nth($sizes , 5);
