@@ -3,14 +3,7 @@
 	.responsive-font {
 		font-size: 4rem;
 	}
-	.logo {
-		.overlapping {
-			width: 20vw;
-			height: 20vw;
-			padding: 2vw;
-			margin:2rem;
-		}
-	}
+
 	.formwrapper {
 		flex: column;
 	}
@@ -32,8 +25,65 @@
 	}
 }
 
-@media only screen and (min-width:600px){
-	.lg {
-		display:none
-	}
+
+/* logo queries media queries for different screen sizes*/
+nav .logo {  
+	@media screen and (max-width: 575.99px) {
+	display: none
+	  }
+	
+
+  @media screen and (min-width: 576px) {
+    height: $logo-size-sm;
+    width: $logo-size-sm;
+	margin-right: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: $logo-size-md;
+    width: $logo-size-md;
+	margin-right: 2rem;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: $logo-size-lg;
+    width: $logo-size-lg;
+	margin-right: 2rem;
+  }
+
+  // Add animation styles for the logo
+  &.lg-animation {
+    transform:rotateX('angle');
+  }
+}
+
+// Define the spin animation
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* socialicons queries media queries for different screen sizes*/
+main .socialneticons{
+	@media screen and (max-width: 575.99px) {
+		display: none
+		  }
+		
+	
+	  @media screen and (min-width: 576px) {
+		height: $icons-size-sm;
+		width: $icons-size-sm;
+	  }
+	
+	  @media screen and (min-width: 768px) {
+		height: $icons-size-md;
+		width: $icons-size-md;
+	  }
+	
+	  @media screen and (min-width: 992px) {
+		height: $icons-size-lg;
+		width: $icons-size-lg;
+	  }
+	
 }

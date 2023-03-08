@@ -6,8 +6,16 @@ aside {
 			}
 		}
 	}
-	display: flex;
-	flex-direction: column;
-	justify-content:flex-end ;
+	.socialneticons a {
+		width: 100px;
+		height: auto;
+		position: fixed;
+		top: 50vh;
+		size: 500px;
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 40px;
+  }
 }
-

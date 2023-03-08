@@ -1,3 +1,4 @@
+/* variable logo sizes */
 @media (min-width: 576px) {
   h2 {
     font-size: small;
@@ -7,12 +8,6 @@
 @media (max-width: 1199.98px) {
   .responsive-font {
     font-size: 4rem;
-  }
-  .logo .overlapping {
-    width: 20vw;
-    height: 20vw;
-    padding: 2vw;
-    margin: 2rem;
   }
   .formwrapper {
     flex: column;
@@ -33,11 +28,67 @@
     flex-direction: column;
   }
 }
-@media only screen and (min-width: 600px) {
-  .lg {
+/* logo queries media queries for different screen sizes*/
+@media screen and (max-width: 575.99px) {
+  nav .logo {
     display: none;
   }
 }
+@media screen and (min-width: 576px) {
+  nav .logo {
+    height: 100px;
+    width: 100px;
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .logo {
+    height: 110px;
+    width: 110px;
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  nav .logo {
+    height: 140px;
+    width: 140px;
+    margin-right: 2rem;
+  }
+}
+nav .logo.lg-animation {
+  transform: rotateX("angle");
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* socialicons queries media queries for different screen sizes*/
+@media screen and (max-width: 575.99px) {
+  main .socialneticons {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .socialneticons {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .socialneticons {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .socialneticons {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 /*RESETS*/
 * {
   margin: 0;
@@ -84,8 +135,6 @@ nav {
 }
 
 .logonavid {
-  max-width: 3.5rem;
-  max-height: 3.5rem;
   background: transparent;
   align-self: flex-end;
 }
@@ -177,25 +226,25 @@ header nav ul li a img:hover {
   transform: rotate(-180deg);
 }
 
+/* 
 .socialneticons {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+    padding: 20px;
+  }
 
 .flexcolumn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
 }
-
+ */
 body {
   overflow-x: hidden;
   position: relative;
@@ -400,13 +449,20 @@ footer a i:hover {
   color: #ff5e14;
 }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 aside a i:hover {
   color: #F25C78;
+}
+aside .socialneticons a {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  top: 50vh;
+  size: 500px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .formsbackground {

@@ -2,8 +2,6 @@ nav {
 	width: 100%;
 }
 .logonavid {
-	max-width: nth($sizes , 9);
-	max-height: nth($sizes , 9);
 	background: transparent;
 	align-self: flex-end;
 }
@@ -13,6 +11,7 @@ nav {
 		transform: rotate(-180deg);
 	}
 }
+
 
 .menu {
 	font-family: nth($font-family , 4);
