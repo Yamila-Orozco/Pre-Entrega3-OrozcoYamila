@@ -4,11 +4,12 @@ a {
 
 .scroll {
 	a {
-		color: nth($color , 10);
+		color: nth($color , 2);
 		font-size: nth($sizes , 8);
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-decoration: map-get($decolinks , none);
 	}
 }
 
@@ -16,7 +17,8 @@ img {
 	align-content: center;
 }
 .maincontainer {
-	@extend %padding-margin-4
+	@extend %padding-margin-4;
+	@extend %disposition-text;
 }
 
 section {
@@ -32,7 +34,7 @@ div {
 	}
 }
 
-
+/*
 .alignmentcenter {
 	text-align: center;
 }
@@ -44,3 +46,4 @@ div {
 		align-self: center;
 	}
 }
+*/
