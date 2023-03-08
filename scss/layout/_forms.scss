@@ -13,6 +13,7 @@
 	padding: nth($sizes , 2);
 	align-content: center;
 }
+
 .container {
 	width: 80%;
 	margin: auto;
@@ -80,6 +81,7 @@
 		}
 	}
 }
+
 .register {
 	width: 50%;
 	background-image: linear-gradient(135deg, #F25C78 5%, #7291F9 95%);
@@ -113,6 +115,7 @@
 		}
 	}
 }
+
 input[type="email"] {
 	width: 100%;
 	padding: 10px;

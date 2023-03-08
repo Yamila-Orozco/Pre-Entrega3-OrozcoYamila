@@ -25,10 +25,10 @@ footer {
 		margin-top: nth($sizes , 2);
 	}
 }
+
 .cta-text {
 	padding-left: nth($sizes , 3);
 	display: inline-block;
-
 	h4 {
 		color: nth($color , 7);
 		font-size: 2nth($sizes , 6);
@@ -39,6 +39,7 @@ footer {
 		font-size: nth($sizes , 4);
 	}
 }
+
 .footer-content {
 	position: relative;
 	z-index: 100;
@@ -67,10 +68,12 @@ footer {
 		}
 	}
 }
+
 .copyright-area {
 	background: nth($color , 5);
 	padding: 10px;
 }
+
 .copyright-text {
 	p {
 		margin: 0;
